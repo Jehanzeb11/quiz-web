@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: url("quiz.jpg")center center/cover no-repeat;
+    height: 100vh;
+}
+
+
+h2 {
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 25px;
+    font-size: 3rem;
+    color: rgb(210, 255, 208);
+    text-decoration: underline;
+}
+
+.mainBox {
+    width: 40%;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+
+}
+
+.header {
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.body {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.body li {
+    margin: 15px 0;
+    padding: 8px;
+    background-color: rgb(220, 255, 213);
+    list-style: none;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    color: rgb(23, 97, 0);
+    cursor: pointer;
+
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    margin-left: 1rem;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1rem;
+    color: rgb(255, 254, 254);
+}
+
+.bottom button {
+    background-color: rgb(180, 255, 180);
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bolder;
+    font-size: 1rem;
+    color: rgb(23, 97, 0);
+}
+
+.hide {
+    display: none;
+}
+
+
+.show {
+    display: block;
+    text-align: center;
+    color: rgb(210, 254, 219);
+    font-size: 5rem;
+
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.success {
+    background-color: green;
+}
+
+
+.wrong {
+    background-color: red;
+}
+
+
+
+
+/* media queries */
+
+
+@media only screen and (max-width:1170px) {
+    .mainBox {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .header {
+        font-size: 0.7rem;
+    }
+
+    .body li {
+        font-size: 1.2rem;
+
+    }
+
+    h2 {
+
+        font-size: 2.5rem
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .mainBox {
+        width: 85%;
+    }
+}
